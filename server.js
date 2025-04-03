@@ -7,7 +7,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 app.use(
   cors({
-    origin: "http://localhost:3000", // Explicitly allow your frontend
+    origin: "*", // Explicitly allow your frontend
     methods: "GET,POST", // Only allow needed methods
     allowedHeaders: "Content-Type", // Allow JSON requests
   })
